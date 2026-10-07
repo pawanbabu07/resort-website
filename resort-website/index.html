@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Escape to Paradise | Paradise Escape Resort</title>
+    <meta name="description"
+        content="Paradise Escape Resort: luxury beachfront stays, fine dining, spa and unforgettable experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="nav"></header>
+
+    <section class="hero" data-bg="hero.jpg">
+        <div class="wrap">
+            <h1>Escape to Paradise</h1>
+            <p>Where luxury meets nature and every stay becomes unforgettable.</p>
+            <div class="btns"><a class="btn" href="#rooms">Explore Rooms</a><a class="btn ghost" href="#booking">Book
+                    Your Stay</a></div>
+        </div>
+    </section>
+    <section class="book" id="booking">
+        <div class="wrap">
+            <div class="glass">
+                <form id="bookForm" novalidate>
+                    <div><label for="cin">Check-in</label><input type="date" id="cin"></div>
+                    <div><label for="cout">Check-out</label><input type="date" id="cout"></div>
+                    <div><label for="guests">Guests</label><input type="number" id="guests" min="1" max="10" value="2">
+                    </div>
+                    <div><label for="roomType">Room Type</label><select id="roomType">
+                            <option value="any">Any room</option>
+                            <option value="ocean">Ocean View</option>
+                            <option value="garden">Garden</option>
+                            <option value="suite">Suite</option>
+                        </select></div>
+                    <button class="btn dark">Search Availability</button>
+                    <p class="msg" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrap" id="aboutBlock" data-more="1"></div>
+    </section>
+    <section id="rooms" class="alt">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Rooms & Suites</h2>
+                <p>Thoughtfully designed spaces for rest and romance.</p>
+            </div>
+            <div id="roomFilters" class="filters"></div>
+            <div class="grid" id="roomsGrid" data-limit="3"></div>
+            <p style="text-align:center;margin-top:34px"><a class="btn dark" href="rooms.html">View All Rooms</a></p>
+        </div>
+    </section>
+    <section id="facilities" class="">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Resort Facilities</h2>
+                <p>Everything you need for a perfect stay.</p>
+            </div>
+            <div class="grid" id="facGrid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div>
+        </div>
+    </section>
+    <section id="experience" class="alt">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Resort Experience</h2>
+                <p>Moments you will talk about long after you leave.</p>
+            </div>
+            <div class="grid" id="expGrid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"></div>
+        </div>
+    </section>
+    <section id="gallery" class="">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Gallery</h2>
+                <p>A glimpse of life at Paradise Escape.</p>
+            </div>
+            <div class="gal" id="galGrid"></div>
+        </div>
+    </section>
+    <section id="offers" class="alt">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Special Offers</h2>
+                <p>Limited-time packages for every kind of traveller.</p>
+            </div>
+            <div class="grid" id="offerGrid"></div>
+        </div>
+    </section>
+    <section id="testimonials" class="">
+        <div class="wrap">
+            <div class="head rv">
+                <h2>Guest Reviews</h2>
+                <p>Kind words from our guests.</p>
+            </div>
+            <div id="testi"></div>
+        </div>
+    </section>
+    <section id="contact" class="alt">
+        <div class="wrap" id="contactBlock"></div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
